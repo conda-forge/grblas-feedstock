@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/jim22k/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 80d50111437c028f44b13b772f813730ee1e34465396c43f73c36a439fc7f045
+  sha256: df88e1d13e57cc2bcb74046264001a637201d7fd08cd038799c5bb8301741dba
 
 build:
   skip: true  # [win or py<37]
