@@ -1,5 +1,5 @@
 {% set name = "grblas" %}
-{% set version = "1.2.5" %}
+{% set version = "1.2.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/jim22k/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 91b05d38d8b245359ab2d8b89c066f40600ce82b5d7d2c680bf52e24e45d07d0
+  sha256: df88e1d13e57cc2bcb74046264001a637201d7fd08cd038799c5bb8301741dba
 
 build:
   skip: true  # [win or py<37]
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -40,7 +40,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'Python wrapper around GraphBLAS'
+  summary: Python wrapper around GraphBLAS
   description: |
     Python wrapper around GraphBLAS. Currently only supports SuiteSparse::GraphBLAS.
     Goal is to be Pythonic, while also maintaining a 1:1 mapping to GraphBLAS API calls.
