@@ -1,7 +1,7 @@
 About grblas
 ============
 
-Home: https://github.com/jim22k/grblas
+Home: https://github.com/metagraph-dev/grblas
 
 Package license: Apache-2.0
 
