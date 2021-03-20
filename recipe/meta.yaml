@@ -29,6 +29,7 @@ requirements:
     - numpy >=1.15
     - pytest-runner
   run:
+    - {{ pin_compatible('numpy') }}
     - python
     - cffi
     - numba
