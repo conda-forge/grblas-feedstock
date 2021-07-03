@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/metagraph-dev/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: d61ee589bf5ae67cb17b9d0e7384c2d6a3d31cb7c458bfa4d7cb042c858d61ad
+  sha256: c5b8bbb60ba72184b774466c08c1cdb2a974f7f0e00142966fe97ebefd2712e8
 
 build:
   skip: true  # [py<37]
