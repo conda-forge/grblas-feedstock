@@ -1,5 +1,5 @@
 {% set name = "grblas" %}
-{% set version = "1.3.11" %}
+{% set version = "1.3.12" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/grblas-{{ version }}.tar.gz
-  sha256: 01bfdccb15b3d937b75cb55797a33768b76dc02e3b600e511f066d84b6f124fb
+  sha256: 2929a67a34fbce726f5e94e3c56080da8321ffeeb2248bee174beadc76b053a6
 
 build:
   number: 0
@@ -21,9 +21,11 @@ requirements:
     - pytest-runner
     - python >=3.7
   run:
+    - donfig
     - numba
     - python >=3.7
     - python-suitesparse-graphblas >=5.1.3,<5.2
+    - pyyaml
 
 test:
   imports:
