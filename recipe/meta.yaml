@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/grblas-{{ version }}.tar.gz
-  sha256: c0fa439e4a248edf84ca0df48e076e21cd17419b379f07a0a336b1c7eadaa5c4
+  sha256: 6410cab57e69f377a4e3242757a6c869b9a9521e34052e42bffd2012cd42cd0c
 
 build:
   noarch: python
