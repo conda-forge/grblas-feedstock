@@ -1,5 +1,5 @@
 {% set name = "grblas" %}
-{% set version = "2022.3.1" %}
+{% set version = "2022.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/grblas-{{ version }}.tar.gz
-  sha256: 6410cab57e69f377a4e3242757a6c869b9a9521e34052e42bffd2012cd42cd0c
+  sha256: fd86154555969046772533845efbc1942262f743282acc33e63a2138fa9bb60e
 
 build:
   noarch: python
