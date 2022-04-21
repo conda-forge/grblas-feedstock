@@ -1,7 +1,7 @@
-About grblas
-============
+About python-graphblas
+======================
 
-Home: https://github.com/metagraph-dev/grblas
+Home: https://github.com/python-graphblas/python-graphblas
 
 Package license: Apache-2.0
 
@@ -9,10 +9,11 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/grblas-feedstoc
 
 Summary: Python interface to GraphBLAS
 
-Development: https://github.com/metagraph-dev/grblas
+Development: https://github.com/python-graphblas/python-graphblas
 
 Python wrapper around GraphBLAS. Currently only supports SuiteSparse::GraphBLAS.
-Goal is to be Pythonic, while also maintaining a 1:1 mapping to GraphBLAS API calls.
+Goal is to be a Pythonic way to write beautiful, efficient graph algorithms
+in the language of linear algebra.
 
 
 Current build status
@@ -33,53 +34,53 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-grblas-green.svg)](https://anaconda.org/conda-forge/grblas) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/grblas.svg)](https://anaconda.org/conda-forge/grblas) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/grblas.svg)](https://anaconda.org/conda-forge/grblas) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/grblas.svg)](https://anaconda.org/conda-forge/grblas) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-python--graphblas-green.svg)](https://anaconda.org/conda-forge/python-graphblas) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/python-graphblas.svg)](https://anaconda.org/conda-forge/python-graphblas) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/python-graphblas.svg)](https://anaconda.org/conda-forge/python-graphblas) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/python-graphblas.svg)](https://anaconda.org/conda-forge/python-graphblas) |
 
-Installing grblas
-=================
+Installing python-graphblas
+===========================
 
-Installing `grblas` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `python-graphblas` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `grblas` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `python-graphblas` can be installed with `conda`:
 
 ```
-conda install grblas
-```
-
-or with `mamba`:
-
-```
-mamba install grblas
-```
-
-It is possible to list all of the versions of `grblas` available on your platform with `conda`:
-
-```
-conda search grblas --channel conda-forge
+conda install python-graphblas
 ```
 
 or with `mamba`:
 
 ```
-mamba search grblas --channel conda-forge
+mamba install python-graphblas
+```
+
+It is possible to list all of the versions of `python-graphblas` available on your platform with `conda`:
+
+```
+conda search python-graphblas --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search python-graphblas --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search grblas --channel conda-forge
+mamba repoquery search python-graphblas --channel conda-forge
 
-# List packages depending on `grblas`:
-mamba repoquery whoneeds grblas --channel conda-forge
+# List packages depending on `python-graphblas`:
+mamba repoquery whoneeds python-graphblas --channel conda-forge
 
-# List dependencies of `grblas`:
-mamba repoquery depends grblas --channel conda-forge
+# List dependencies of `python-graphblas`:
+mamba repoquery depends python-graphblas --channel conda-forge
 ```
 
 
@@ -124,17 +125,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating grblas-feedstock
-=========================
+Updating python-graphblas-feedstock
+===================================
 
-If you would like to improve the grblas recipe or build a new
+If you would like to improve the python-graphblas recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/grblas-feedstock are
+Note that all branches in the conda-forge/python-graphblas-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
